@@ -1,0 +1,15 @@
+name: Deploy
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    name: Run Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build and Test
+        run: |
+          echo "Running Tests..."
+          sleep 10s
