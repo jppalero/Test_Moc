@@ -1,9 +1,9 @@
-name: Deploy
+name: Test
 on:
   workflow_dispatch:
   push:
     branches:
-      - master
+      - main
 jobs:
   build:
     name: Run Test
